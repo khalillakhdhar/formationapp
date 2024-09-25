@@ -36,7 +36,6 @@ public class Profile  {
 	@MapsId
 	@JoinColumn(name = "id")
 	@OneToOne(optional = false,cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("profile")
 	private User user;
 	
 	
